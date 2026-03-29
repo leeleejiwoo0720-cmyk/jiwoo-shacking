@@ -1,0 +1,27 @@
+def password_check(pw):
+    if len(pw) >= 8:
+        print("강함")
+    elif len(pw) >= 4:
+        print("중간")
+    elif len(pw) <= 3:
+        print("약함")
+
+password_check("abc")        # → 약함
+password_check("hello")      # → 중간
+password_check("superhero")  # → 강함
+
+
+
+
+
+while True:
+    a = input("비밀번호를 입력하세요")
+    if len(a) >= 8:
+        print("강함")
+        break
+    elif len(a) >= 4:
+        print("중간")
+    elif len(a) <= 3:
+        print("약함")
+
+
